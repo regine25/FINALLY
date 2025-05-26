@@ -1,5 +1,4 @@
 import streamlit as st
-import bcrypt
 
 # ✅ Store authentication state
 if "authenticated" not in st.session_state:
@@ -56,7 +55,8 @@ if st.session_state.authenticated:
             st.success("✅ You have been logged out.")
             st.rerun()  # 🔄 Refresh page to return to login
 
-    # 🎨 Dashboard UI Below
+    # 🎨 Dashboard UI Below
+
     import streamlit as st
 import pandas as pd
 import random
